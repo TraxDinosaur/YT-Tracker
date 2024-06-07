@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mock video data
     const videoData = {
         title: "Python-Telegram-Bot 13",
-        publishDate: "06-06-2024",
+        publishDate: "07-06-2024",
         planningDone: true,
         scriptingDone: true,
         shootingDone: true,
