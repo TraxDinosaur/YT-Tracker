@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mock video data
     const videoData = {
         title: "Soon",
-        publishDate: "",
+        publishDate: "00-06-2024",
         planningDone: true,
         scriptingDone: true,
         shootingDone: true,
