@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoData = {
         title: "Soon",
         publishDate: "00-06-2024",
-        planningDone: true,
-        scriptingDone: true,
-        shootingDone: true,
+        planningDone: false,
+        scriptingDone: false,
+        shootingDone: false,
         editingDone: false,
         reviewDone: false
     };
