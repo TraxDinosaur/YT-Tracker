@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         publishDate: "18-06-2024",
         planningDone: true,
         scriptingDone: true,
-        shootingDone: false,
-        editingDone: false,
+        shootingDone: true,
+        editingDone: true,
         reviewDone: false
     };
 
