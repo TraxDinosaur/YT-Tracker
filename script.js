@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mock video data
     const videoData = {
-        title: "Python-Telegram-Bot 14",
-        publishDate: "19-06-2024",
-        planningDone: true,
-        scriptingDone: true,
-        shootingDone: true,
-        editingDone: true,
+        title: "Soon",
+        publishDate: "00-06-2024",
+        planningDone: false,
+        scriptingDone: false,
+        shootingDone: false,
+        editingDone: false,
         reviewDone: false
     };
 
