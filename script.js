@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mock video data
     const videoData = {
-        title: "Soon",
+        title: "Delayed Beaacuse Of Health Issues.",
         publishDate: "00-06-2024",
         planningDone: false,
         scriptingDone: false,
