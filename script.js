@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoData = {
         title: "Earning Using Script Playlist Video 1",
         publishDate: "26-08-2024",
-        planningDone: false,
-        scriptingDone: false,
+        planningDone: True,
+        scriptingDone: True,
         shootingDone: false,
         editingDone: false,
         reviewDone: false
