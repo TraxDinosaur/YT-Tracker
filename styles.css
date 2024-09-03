@@ -1,186 +1,196 @@
+/* Global Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #333, #000);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  color: white;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, #1f1c2c, #928dab);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #f0f0f0;
 }
 
 header {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  padding: 1.5rem 2rem;
-  width: 80%;
-  max-width: 1200px;
-  margin-bottom: 2rem;
-  animation: fadeIn 1s ease-out;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 1rem 2rem;
+    width: 90%;
+    max-width: 1000px;
+    margin-bottom: 2rem;
+    animation: dropDown 1s ease-out;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
 }
 
 main {
-  width: 80%;
-  max-width: 1200px;
-  animation: fadeIn 1.5s ease-out;
+    width: 90%;
+    max-width: 1000px;
+    animation: fadeIn 1.5s ease-out;
 }
 
 .video-update {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  color: white;
-  animation: fadeIn 2s ease-out;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    color: white;
+    animation: scaleUp 1.5s ease-out;
+    text-align: center;
 }
 
 .video-update h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-  color: white;
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #e4e6eb;
+    font-weight: 500;
 }
 
 .progress-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-  gap: 10px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .progress-step {
-  text-align: center;
-  position: relative;
-  flex: 1;
-  min-width: 100px;
-  opacity: 0.5;
-  transform: scale(0.9);
-  transition: all 0.3s ease;
-  margin-bottom: 20px; /* Add some space between rows on small screens */
+    text-align: center;
+    position: relative;
+    flex: 1;
+    min-width: 120px;
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+    margin-bottom: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .progress-step.completed {
-  opacity: 1;
-  transform: scale(1);
-  transition: all 0.3s ease;
-}
-
-.progress-step:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -50%;
-  transform: translateY(-50%);
-  width: 100%;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.1);
-  z-index: -1;
-  transition: background-color 0.3s ease;
-}
-
-.progress-step.completed ~ .progress-step::after {
-  background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    background: rgba(0, 150, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.5);
 }
 
 .step-icon {
-  font-size: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 0 auto;
-  transition: background-color 0.3s, transform 0.3s;
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: background-color 0.4s, transform 0.4s;
 }
 
 .progress-step.completed .step-icon {
-  background-color: rgba(255, 0, 0, 0.7);
-  transform: scale(1.2);
+    background-color: #0096ff;
+    transform: scale(1.2);
+    animation: pulse 1.5s infinite ease-in-out;
 }
 
 .progress-step p {
-  margin-top: 0.5rem;
-  font-weight: bold;
-  color: white;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #e6e6e6;
 }
 
 footer {
-  margin-top: 2rem;
-  text-align: center;
-  color: white;
-  animation: fadeIn 2s ease-out;
+    margin-top: 2rem;
+    text-align: center;
+    color: #e4e6eb;
+    animation: fadeIn 2s ease-out;
+    font-size: 0.9rem;
 }
 
+/* Animations */
 @keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dropDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes pulse {
-  0% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(1.05);
-  }
-  100% {
-      transform: scale(1);
-  }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-.progress-step.completed .step-icon {
-  animation: pulse 1s infinite ease-in-out;
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  header, main {
-      width: 90%;
-  }
+    header, main {
+        width: 95%;
+    }
 
-  .video-update {
-      padding: 1.5rem;
-  }
+    .video-update {
+        padding: 1.5rem;
+    }
 
-  .progress-container {
-      flex-direction: column;
-      gap: 20px;
-  }
-
-  .progress-step:not(:last-child)::after {
-      right: 50%;
-      top: 75px; /* Move the line down to connect to the next step */
-      width: 4px;
-      height: 100%;
-      transform: translateX(50%);
-  }
+    .progress-container {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 480px) {
-  .step-icon {
-      font-size: 1.5rem;
-      width: 40px;
-      height: 40px;
-  }
+    .step-icon {
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+    }
 
-  .progress-step p {
-      font-size: 0.9rem;
-  }
+    .progress-step p {
+        font-size: 0.85rem;
+    }
 }
