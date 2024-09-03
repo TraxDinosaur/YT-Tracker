@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoData = {
         title: "Earning Using Script Playlist Video 1",
         publishDate: "05-09-2024",
-        planningDone: true, 
+        planningDone: true,
         scriptingDone: true,
-        shootingDone: true, 
+        shootingDone: true,
         editingDone: false,
         reviewDone: false
     };
@@ -26,22 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     videoTitle.textContent = videoData.title;
     publishDate.textContent = videoData.publishDate;
 
-    if (videoData.planningDone) {
-        steps[0].classList.add('completed');
-    }
-    if (videoData.scriptingDone) {
-        steps[1].classList.add('completed');
-    }
-    if (videoData.shootingDone) {
-        steps[2].classList.add('completed');
-    }
-    if (videoData.editingDone) {
-        steps[3].classList.add('completed');
-    }
-    if (videoData.reviewDone) {
-        steps[4].classList.add('completed');
-    }
-    if (videoData.publishDate) {
-        steps[5].classList.add('completed');
-    }
+    if (videoData.planningDone) steps[0].classList.add('completed');
+    if (videoData.scriptingDone) steps[1].classList.add('completed');
+    if (videoData.shootingDone) steps[2].classList.add('completed');
+    if (videoData.editingDone) steps[3].classList.add('completed');
+    if (videoData.reviewDone) steps[4].classList.add('completed');
+    if (videoData.publishDate) steps[5].classList.add('completed');
 });
