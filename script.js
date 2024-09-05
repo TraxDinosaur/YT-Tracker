@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         planningDone: true,
         scriptingDone: true,
         shootingDone: true,
-        editingDone: false,
-        reviewDone: false
+        editingDone: true,
+        reviewDone: true
     };
 
     // Update UI with mock data
