@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scriptingDone: true,
         shootingDone: true,
         editingDone: true,
-        reviewDone: true
+        reviewDone: false
     };
 
     // Update UI with mock data
