@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mock video data
     const videoData = {
-        title: "Earning Using Script Playlist Video 1",
-        publishDate: "06-09-2024",
+        title: "Create Your Own VPS Serve For Free To Run Your Scripts 24/7",
+        publishDate: "15-09-2024",
         planningDone: true,
-        scriptingDone: true,
-        shootingDone: true,
-        editingDone: true,
-        reviewDone: true
+        scriptingDone: false,
+        shootingDone: false,
+        editingDone: false,
+        reviewDone: false
     };
 
     // Update UI with mock data
