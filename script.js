@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mock video data
     const videoData = {
-        title: "Create Your Own VPS Serve For Free To Run Your Scripts 24/7",
-        publishDate: "15-09-2024",
-        planningDone: true,
+        title: "Soon",
+        publishDate: "00-00-0000",
+        planningDone: false,
         scriptingDone: false,
         shootingDone: false,
         editingDone: false,
